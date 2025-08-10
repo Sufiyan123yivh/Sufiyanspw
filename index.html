@@ -142,7 +142,7 @@
       showView('subjects');
       subjectsDiv.innerHTML = '';
 
-      const res = await fetch(`https://pwxavengers-proxy.pw-avengers.workers.dev/api/${batchId}/subjects`);
+      const res = await fetch(`https://pwxavengers-proxy.pw-avengers.workers.dev/api/batch/${batchId}`);
       const { subjects } = await res.json();
 
       document.getElementById('subjectLoader').classList.add('hidden');
